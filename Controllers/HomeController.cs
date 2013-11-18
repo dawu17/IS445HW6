@@ -25,6 +25,7 @@ namespace IS445.Controllers
           }
           else
           {
+            //string formatted = string.Format("{0: (###) ###-####}", inputNumber);
             string formatted = formatNumber(inputNumber);
             return View((object)formatted);
           }
@@ -33,8 +34,9 @@ namespace IS445.Controllers
         // please implement your phone number formatting logic here
         private string formatNumber(string inputNumber)
         {
-          // imiplement formatting here
-          return "formated number is: " + inputNumber;
+          string newformat = string.Format("{0: (###) ###-####}", Convert.ToInt64(inputNumber)); 
+            // imiplement formatting here
+          return newformat;
         }
 
     }

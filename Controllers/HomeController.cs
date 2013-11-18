@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace IS445.Controllers
 {
     public class HomeController : Controller
@@ -15,6 +16,24 @@ namespace IS445.Controllers
         {
             return View();
         }
+
+        public ActionResult Task2()
+        {
+            return View();
+        }
+
+        public ActionResult ReWord(string inputwords)
+        {
+
+            String Newword = string.Join(" ", inputwords.Split(' ').Reverse());
+            //string[] Newwords = inputwords.Split(' ');
+            //Array.Reverse(Newwords);
+
+            return View((object)Newword);
+        }
+
+
+
 
         public ActionResult FormatPhoneNumber(string inputNumber)
         {
@@ -38,6 +57,9 @@ namespace IS445.Controllers
             // imiplement formatting here
           return newformat;
         }
+
+
+
 
     }
 }

@@ -143,6 +143,12 @@
   <ItemGroup>
     <Content Include="Views\Home\FormatPhoneNumber.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Task2.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ReWord.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
